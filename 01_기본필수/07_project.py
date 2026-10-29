@@ -99,6 +99,7 @@ for epoch in range(1, 81):
     loss = loss_fn(model(X_train), y_train)
 
     # >>> B08
+    # TODO
     # 3단계: 역전파 (Backward Pass)
     # 계산 그래프를 따라 손실값에 대한 각 파라미터의 미분값(기울기, gradient)을 계산하여 param.grad에 저장합니다.
     loss.backward()
@@ -127,6 +128,7 @@ with torch.no_grad():
     logits = model(X_valid)
 
     # >>> B09
+    # TODO
     # [클래스 예측 (Argmax)]
     # 점수(logit)가 더 큰 쪽의 클래스 번호(0 또는 1)를 최종 예측값으로 채택합니다.
     # dim=1: 행 방향(가로, 클래스 축)으로 비교하라는 의미 (Shape: [4, 2] -> [4])
